@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myprotein Popup Activations · UK FY26</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet/leaflet-maplibre-gl.js"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1>POPUP <span>ACTIVATIONS</span></h1>
+    <p>Myprotein · UK · FY26</p>
+  </div>
+  <div class="pills" id="filters">
+    <button class="pill active" data-city="all">All 5</button>
+    <button class="pill" data-city="London">London</button>
+    <button class="pill" data-city="Manchester">Manchester</button>
+    <button class="pill" data-city="Edinburgh">Edinburgh</button>
+  </div>
+</header>
+
+<div class="main">
+  <div id="map"></div>
+  <div class="sidebar">
+    <div class="sb-head">
+      <div class="sb-label">UK Activation Strategy</div>
+      <div class="sb-title">5 Locations</div>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
